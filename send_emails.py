@@ -25,6 +25,8 @@ with open(args.f, newline="", encoding="utf-8-sig") as f:
         msg["From"] = args.u
         msg["To"] = row["toaddress"]
         msg["Subject"] = row["subject"]
+        msg["Cc"] = row["ccaddress"]
+        msg["Bcc"] = row["bccaddress"]
 
         msg.set_content(
             f"Hello {row['firstname']} {row['lastname']},\n\n"
