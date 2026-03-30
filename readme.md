@@ -4,7 +4,7 @@
 firstname,lastname,toaddress,subject,attachment link
 
 3.Run it like this:
-python send.py -u youraddress@gmail.com -p your_app_password -f emails.csv
+python send_emails.py -u youraddress@gmail.com -p your_app_password -f emails.csv
 
 4.Use a Gmail app password, not your normal password.
 
